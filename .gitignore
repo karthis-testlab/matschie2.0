@@ -1,0 +1,8 @@
+.classpath
+.project
+.settings/
+allure-results/
+reports-html/
+target/
+test-output/
+src/test/resources/secret.properties
