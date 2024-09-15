@@ -11,8 +11,8 @@
 		<apache.poi.version>5.2.4</apache.poi.version>
 		<apache.poi.ooxml.version>5.2.4</apache.poi.ooxml.version>
 		<opencsv.version>5.9</opencsv.version>
-		<cucumber.jvm.version>7.18.1</cucumber.jvm.version>
-		<cucumber.jvm.testng.version>7.18.1</cucumber.jvm.testng.version>
+		<cucumber.jvm.version>6.11.0</cucumber.jvm.version>
+		<cucumber.jvm.testng.version>6.11.0</cucumber.jvm.testng.version>
 		<allure.report.version>2.24.0</allure.report.version>
 	</properties>
 	<dependencyManagement>
@@ -76,6 +76,10 @@
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-cucumber6-jvm</artifactId>
 		</dependency>
 	</dependencies>
 </project>

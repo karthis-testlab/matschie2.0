@@ -1,0 +1,41 @@
+C:.
+├───allure-results
+│   └───history
+├───reports-html
+│   └───allure
+│       ├───data
+│       │   └───test-cases
+│       ├───export
+│       ├───history
+│       ├───plugin
+│       │   ├───behaviors
+│       │   ├───packages
+│       │   └───screen-diff
+│       └───widgets
+├───src
+│   ├───main
+│   │   ├───java
+│   │   │   └───com
+│   │   │       └───matschie
+│   │   │           ├───data
+│   │   │           │   └───utils
+│   │   │           ├───general
+│   │   │           │   └───utils
+│   │   │           ├───pojo
+│   │   │           │   ├───deserialization
+│   │   │           │   └───serialization
+│   │   │           ├───servicenow
+│   │   │           │   └───services
+│   │   │           └───testng
+│   │   │               └───api
+│   │   └───resources
+│   │       ├───data
+│   │       ├───query-params
+│   │       └───request-payloads
+│   └───test
+│       ├───java
+│       │   └───com
+│       │       └───matschie
+│       │           └───servinow
+│       │               └───tests
+│       └───resources

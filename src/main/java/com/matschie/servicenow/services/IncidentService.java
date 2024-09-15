@@ -1,6 +1,7 @@
 package com.matschie.servicenow.services;
 
 import java.io.File;
+import java.util.List;
 import java.util.Map;
 
 import com.matschie.pojo.deserialization.Root;
@@ -153,6 +154,20 @@ public class IncidentService {
 	public IncidentService validateCallerIdValue(String expected) {
 		assertThat(rootCallerId.getResult().getCaller_id().getValue(), equalTo(expected));
 		return this;
+	}
+	
+	public IncidentService validateIncidentCategory(String jsonPath, String expected) {
+		List<String> list = response.body().jsonPath().getList(jsonPath);
+		for (String string : list) {
+			assertThat(string, equalTo(expected));
+		}
+		return this;
+	}
+	
+	public IncidentService validateIncidentCategoryCount(String jsonPath, int expected) {
+		List<String> list = response.body().jsonPath().getList(jsonPath);
+		assertThat(list.size(), equalTo(expected));
+		return null;
 	}
 	
 	public String extractValue(String jsonPath) {
